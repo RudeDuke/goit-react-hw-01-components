@@ -1,0 +1,53 @@
+.transaction_history {
+  width: 100%;
+  min-width: 300px;
+  max-width: 450px;
+  border-collapse: collapse;
+  color: #808080;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.transaction_history th,
+.transaction_history td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.transaction_history th {
+  color: #ffffff;
+  background-color: #00a6a6;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.transaction_history th:not(:first-child) {
+  border-left: 1px solid #ffffff;
+}
+
+.transaction_history tr {
+  height: 30px;
+}
+
+.transaction_history tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.transaction_history tr:nth-child(even) {
+  background-color: #ecf1f4;
+}
+
+.transaction_history td:first-child {
+  text-transform: capitalize;
+}
+
+.transaction_history td:not(:first-child) {
+  border-left: 1px solid #c8d4da;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction_history {
+    max-width: none;
+  }
+}
